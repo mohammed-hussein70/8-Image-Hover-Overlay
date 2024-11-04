@@ -1,0 +1,37 @@
+p {
+  font-size: 25px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+.container .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.container .hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  &:hover {
+    opacity: 1;
+  }
+}
+.container .hover .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
